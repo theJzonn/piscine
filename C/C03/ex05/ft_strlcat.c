@@ -30,16 +30,17 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	i = 0;
 	y = 0;
 	dests = ft_strlen(dest);
+	srcs = ft_strlen(src);
 	while (dest[i] != '\0')
 		i++;
-	if (src[0] == '\0')
-		return (dests);
-	srcs = ft_strlen(src);
 	while (src[y] != '\0' && i < size - 1)
 	{
 		dest[i] = src[y];
 		y++;
 		i++;
 	}
-	return (dests + srcs);
+	if (size > dests)
+		return (dests + srcs);
+	else
+		return (size + srcs);
 }
