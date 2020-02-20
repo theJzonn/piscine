@@ -6,7 +6,7 @@
 /*   By: jricafor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/17 12:58:26 by jricafor          #+#    #+#             */
-/*   Updated: 2020/02/20 15:45:33 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/02/20 17:17:23 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # define TRUE 1
 # define FALSE 0
 # define SUCCESS 0
-# define EVEN(x) x % 2 ? 0 : 1
+# define EVEN(x) x % 2 != 0
 # define EVEN_MSG "I have an even number of arguments."
 # define ODD_MSG "I have an odd number of arguments."
 

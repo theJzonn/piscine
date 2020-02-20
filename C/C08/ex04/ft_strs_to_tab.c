@@ -6,7 +6,7 @@
 /*   By: jricafor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 17:16:19 by jricafor          #+#    #+#             */
-/*   Updated: 2020/02/20 15:28:35 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/02/20 19:03:12 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ struct s_stock_str		*ft_strs_to_tab(int ac, char **av)
 			i++;
 		}
 		tab[i].str = 0;
+		tab[i].copy = 0;
 	}
 	return (tab);
 }
