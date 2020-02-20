@@ -35,7 +35,7 @@ char	*ft_strcapitalize(char *str)
 	{
 		if (ft_str_is_alpha(str[i]) && !ft_str_is_alpha(str[i - 1]))
 		{
-			if (str[i] >= '0' && str[i] <= '9')
+			if (str[i - 1] >= '0' && str[i - 1] <= '9')
 				str[i] = str[i];
 			else
 				str[i] = str[i] - 32;
