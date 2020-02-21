@@ -1,5 +1,0 @@
-Credentials cache: API:6095E896-7850-4B46-B8E9-F0DC5BDC0869
-        Principal: jricafor@42.FR
-
-  Issued                Expires               Principal
-Feb  3 16:00:57 2020  Feb 10 16:00:47 2020  krbtgt/42.FR@42.FR
