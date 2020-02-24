@@ -1,20 +1,31 @@
-NAME = libft.a
-SRCS = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c srcs/ft_strlen.c srcs/ft_swap.c
-SRCSO  = srcs/ft_putchar.o srcs/ft_putstr.o srcs/ft_strcmp.o srcs/ft_strlen.o srcs/ft_swap.o
-HEADER = includes/ft.h
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -f
+NAME		=	libft.a
 
-all: ${NAME}
+PATH_SRCS	=	./srcs/
 
-$(NAME}:	${SRCSO}
-		gcc ${CFLAGS} -I ${HEADER} -c  ${SRCS}
-		ar rc ${NAME} ${SRCSO}
+SRCS		=	/rcs/ft_putchar.c /rcs/ft_swap.c srcs/ft_putstr.c srcs/ft_strlen.c srcs/ft_strcmp.c
+
+INCLUDES	=	./includes
+
+OBJS		=	${SRCS:.c=.o}
+
+RM			= rm -f
+
+CFLAGS		= -Wall -Wextra -Werror
+
+all:		${NAME}
+
+.c.o:
+			${CC} -c ${CFLAGS} -I ${INCLUDES} $< -o ${<:.c=.o}
+
+${NAME}:	${OBJS}
+			ar rc ${NAME} ${OBJS}
 
 clean:
-		${RM} ${SRCSO}
+			${RM} ${OBJS}
 
-fclean: clean
-		${RM} ${NAME}
+fclean:		clean
+			${RM} ${NAME}
 
-re: fclean all
+re:			fclean all
+
+.PHONY:		all clean fclean re
