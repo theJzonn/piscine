@@ -1,8 +1,7 @@
 
 <h1>Piscine_42_fevrier_2020</h1>
 
-<h2>
 ```diff
-+ C_00
++ C_00 85%
++ ex00:OK
 ```
-</h2>
