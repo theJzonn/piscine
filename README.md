@@ -4,3 +4,4 @@
 ```diff
 + C_00
 ```
+<font color="red">This is some text!</font>
