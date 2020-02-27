@@ -6,7 +6,7 @@
 #    By: jricafor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/27 12:01:05 by jricafor          #+#    #+#              #
-#    Updated: 2020/02/27 12:56:19 by jricafor         ###   ########.fr        #
+#    Updated: 2020/02/27 14:03:27 by jricafor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,17 +14,24 @@ NAME	= do-op
 
 SRCS	= main.c ft_do_op.c
 
+OBJS	= ${SRCS:.c=.o}
+
 RM		= rm -f
 
-all: clean ${NAME}
+.c.o:
+	gcc -Wall -Werror -Wextra -c $< -o ${<:.c=.o}
 
-${NAME}:
-	gcc -Wall -Werror -Wextra ${SRCS} -o ${NAME}
+all: ${NAME}
+
+${NAME}: ${OBJS}
+	gcc -Wall -Werror -Wextra ${OBJS} -o ${NAME}
 
 clean:
+	${RM} ${OBJS}
+
+fclean: clean
 	${RM} ${NAME}
 
-re:
-	clean all
+re: clean all
 
-.PHONY: all clean re
+.PHONY: all clean fclean re

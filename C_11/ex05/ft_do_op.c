@@ -6,7 +6,7 @@
 /*   By: jricafor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 11:41:07 by jricafor          #+#    #+#             */
-/*   Updated: 2020/02/27 12:24:34 by jricafor         ###   ########.fr       */
+/*   Updated: 2020/02/27 14:10:06 by jricafor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ void	ft_do_op(char *nb1, char *nb2, char op)
 		ft_putnbr(nb1_int + nb2_int);
 	if (op == '-')
 		ft_putnbr(nb1_int - nb2_int);
-	if (op == '*')
+	if (op == 42)
 		ft_putnbr(nb1_int * nb2_int);
 	if (op == '/' && nb2_int == 0)
 		ft_putstr("Stop : division by zero");
