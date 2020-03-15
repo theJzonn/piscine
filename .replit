@@ -1,2 +1,2 @@
 language = "c"
-run = "run"
+run = "clang-7 -Wall -Werror -Wextra"
