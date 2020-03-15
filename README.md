@@ -1,6 +1,8 @@
 
 <h1>Piscine_42_fevrier_2020</h1>
 
+[![Run on Repl.it](https://repl.it/badge/github/theJzonn/piscine)](https://repl.it/github/theJzonn/piscine)
+
 ```diff
 + C_00: 85%
 + ex00:OK | ex01:OK | ex02:OK | ex03:OK | ex04:OK | ex05:OK | ex06:OK | ex07:OK
