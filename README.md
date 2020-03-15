@@ -38,4 +38,18 @@
 
 + C_09: 100%
 + ex00:OK | ex01:OK | ex02:OK
+
+- C_10: 0%
+- nothing turned in
+
++ C_11: 50%
++ ex00:OK | ex01:OK | ex02:OK | ex03:OK | ex04:OK | ex06:OK
+- ex05 KO
+
+- C_12: 0%
+- not unlocked
+
+- C_1: 0%
+- not unlocked
+
 ```
