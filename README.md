@@ -44,7 +44,7 @@
 
 + C_11: 50%
 + ex00:OK | ex01:OK | ex02:OK | ex03:OK | ex04:OK | ex06:OK
-- ex05 KO
+- ex05:KO | ex07:KO
 
 - C_12: 0%
 - not unlocked
