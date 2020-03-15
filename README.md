@@ -49,7 +49,7 @@
 - C_12: 0%
 - not unlocked
 
-- C_1: 0%
+- C_13: 0%
 - not unlocked
 
 ```
